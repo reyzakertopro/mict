@@ -41,23 +41,6 @@
 </head>
 
 <body>
-  <style>
-    .whatsapp{
-      border-radius: 100px;
-      padding: .5em .85em;
-      background: green;
-      cursor: pointer;
-      position: fixed;
-      bottom: .75em;
-      right: .75em;
-      z-index: 4;
-    }
-    .whatsapp i{
-      color: #fff;
-      font-size: 4.25em;
-    }
-
-  </style>
   <button class="whatsapp" type="button"><i class="fa-brands fa-whatsapp"></i></button>
   <nav>
     <div class="wrapper">
@@ -159,7 +142,7 @@
 
           <div class="case-card">
             <div class="desc" style="flex-grow: 1;">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 <br>PT. Tangguh Samudra Jaya</p>
                 <a href="#" class="case-CTA"><span>Lihat lebih lanjut</span></a>
 
@@ -225,8 +208,82 @@
 
   </main>
 
+  <style>
+    footer .wrapper{
+      display: flex;
+      gap: 1.75em;
+    }
+    footer .wrapper div{
+      padding: 1.25em 0;
+      flex-direction: column;
+      display: flex;
+      gap: .5em;
+      position: relative;
+    }
+    footer .wrapper div .judul{
+      font-size: 1.15em;
+      font-weight: 600;
+    }
+    .footer-loc iframe{max-height: 240px;}
+
+    @media(max-width: 992px) {
+      footer{justify-content: center;}
+      footer .wrapper{flex-direction: column;}
+      footer .wrapper div{
+        align-items: center;
+      }
+      footer .wrapper div a{
+        display: flex;
+        justify-content: center;
+      }
+      footer .wrapper div span{text-align: center;}
+      footer .wrapper div:not(:nth-last-child(1)) span:nth-last-child(1):after{
+        content: '';
+        position: absolute;
+        background: rgba(255, 255, 255, .25);
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+      }
+
+    }
+
+  </style>
+
   <footer>
-    <span>Reyza Fadly <?= date('Y'); ?>. All rights reserved</span>
+    <div class="wrapper">
+      <div class="footer-desc">
+        <a href="#"><span class="judul">Mitra Indutrial Chrome Teknologi</span></a>
+        <span>Kawasan Kavling DPR</span>
+        <span>Blok A No. 153 Kenanga, Cipondoh Tangerang, 15146</span>
+        <span>Banten Indonesia</span>
+        <span>Telepon: (021) 22263653</span>
+        <a href="mailto:office@ptmict.id?subject=MICT Support&body=Hallo MICT">
+          <span>Email: office@ptmict.id</span>
+        </a>
+
+      </div>
+
+      <div class="footer-menu">
+        <span class="judul">Products & Services</span>
+        <a href="#"><span>Engineering Design & Development</span></a>
+        <a href="#"><span>Manufacture</span></a>
+        <a href="#"><span>Hard Chrome Platting</span></a>
+        <a href="#"><span>Ceramic Coating</span></a>
+
+      </div>
+
+      <div class="footer-loc">
+        <span class="judul">Our Workshop</span>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5221063832496!2d106.6868403!3d-6.1946287999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9a4c10ac315%3A0x91d17ca3b59e1175!2sMitra%20Industrial%20Chrome%20Teknologi%20Pt.%2C%20Jl.%20Bulak%20Kinung%20Kav.%20Dpr%20Blok%20A%20No.153%2C%20RT.004%2FRW.003%2C%20Kenanga%2C%20Kec.%20Cipondoh%2C%20Kota%20Tangerang%2C%20Banten%2015146!5e0!3m2!1sen!2sid!4v1727863190388!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+      </div>
+
+    </div>
+
+    <span style="text-align: center;">© <?= date('Y'); ?> Mitra Industrial Chrome Teknologi. All rights reserved.</span>
 
   </footer>
 
