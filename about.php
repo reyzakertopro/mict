@@ -10,7 +10,7 @@ require_once 'assets/components/navbar.php';
 
   /* About us section */
   .about-us p{font-size: 1.05em;}
-  .about-us img{
+  section img{
     width: 100%;
     max-width: 678px;
   }
@@ -28,12 +28,12 @@ require_once 'assets/components/navbar.php';
     justify-content: center;
     padding: .75em;
   }
-  .desc-wrapper > div{
+  .desc-container > div{
     flex-direction: column;
     display: flex;
     gap: .75em;
   }
-  .desc-wrapper div div > span{font-size: 1.075em;}
+  .desc-container div div > span{font-size: 1.075em;}
   .skill-layout ul{padding-top: .25em;}
   .skill-layout li{
     padding-left: .75em;
@@ -68,12 +68,12 @@ require_once 'assets/components/navbar.php';
     display: flex;
     gap: .75em;
   }
-  .address-wrapper .img-gallery{max-width: 768px;}
+  .address-wrapper .img-wrapper{max-width: 768px;}
 
   @media(max-width: 992px) {
     /* Capabilities section */
     .skill .wrapper .skill-layout{flex-direction: column;}
-    .desc-wrapper > div{
+    .desc-container > div{
       flex-direction: row;
     }
 
@@ -111,7 +111,7 @@ require_once 'assets/components/navbar.php';
     <div class="wrapper">
       <span class="judul">Our capabilities</span>
       <div class="skill-layout">
-        <div class="desc-wrapper">
+        <div class="desc-container">
           <div>
             <div class="industry-classification">
               <span>Industry Classification</span>
@@ -162,11 +162,23 @@ require_once 'assets/components/navbar.php';
           <li>Semua pekerjaan dilakukan oleh para ahli yang berpengalaman di bidang masing-masing, didukung oleh fasilitas workshop yang memadai, serta dilengkapi dengan peralatan yang lengkap dan berkualitas.</li>
 
         </ul>
-        <div class="img-gallery">
-          <img src="assets/img/chooseus1.png" alt="chooseus1">
-          <img src="assets/img/chooseus2.png" alt="chooseus2">
-          <img src="assets/img/chooseus3.png" alt="chooseus3">
-          <img src="assets/img/chooseus4.png" alt="chooseus4">
+        <div class="img-wrapper">
+          <div class="thumbnail">
+            <img src="assets/img/chooseus1.png" alt="chooseus1">
+
+          </div>
+          <div class="thumbnail">
+            <img src="assets/img/chooseus2.png" alt="chooseus2">
+
+          </div>
+          <div class="thumbnail">
+            <img src="assets/img/chooseus3.png" alt="chooseus3">
+
+          </div>
+          <div class="thumbnail">
+            <img src="assets/img/chooseus4.png" alt="chooseus4">
+
+          </div>
 
         </div>
 
@@ -185,7 +197,7 @@ require_once 'assets/components/navbar.php';
           <li>Telepon : (021) 22263653 | info : office@ptmict.id</li>
 
         </ul>
-        <div class="img-gallery">
+        <div class="img-wrapper">
           <img src="assets/img/workshop.png" alt="workshop" style="width: 100%;">
           <img src="assets/img/workshop1.png" alt="workshop1" style="width: 100%;">
           <img src="assets/img/office1.png" alt="office1" style="width: 100%;">
@@ -199,7 +211,7 @@ require_once 'assets/components/navbar.php';
 
   </section>
 
-  <section id="contact-us" class="contact-us">
+  <section id="contact-us" class="contact-us" style="padding-top: 5.15em;">
     <div class="wrapper">
       <span class="judul">Ada yang perlu disampaikan pada kami?</span>
       <form action="" method="post">

@@ -3,66 +3,6 @@ require_once 'assets/components/header.php';
 require_once 'assets/components/navbar.php';
 ?>
 
-<style>
-  .hero{min-height: 50vh;}
-  section:not(.hero, .nav):nth-child(odd){background: rgba(1, 1, 3, .115);}
-  .wrapper > div div .judul{
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.15em;
-    color:  #010101;
-  }
-
-  .content{
-    justify-content: center;
-    column-gap: .75em;
-    row-gap: 1.25em;
-    flex-wrap: wrap;
-    display: flex;
-    width: 100%;
-  }
-  .content > div{
-    flex-direction: column;
-    text-align: center;
-    max-width: 560px;
-    display: flex;
-    width: 100%;
-    gap: .25em;
-  }
-
-  .img-wrapper{
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    display: flex;
-    width: 100%;
-  }
-  .img-wrapper .thumbnail{
-    height: fit-content;
-    position: relative;
-    max-width: 280px;
-    display: flex;
-    width: 100%;
-  }
-  .thumbnail figcaption{
-    position: absolute;
-    bottom: .75em;
-    color: #fff;
-    left: .75em;
-    mix-blend-mode: difference;
-  }
-  .thumbnail img{
-    width: 100%;
-    object-fit: contain;
-    border-radius: 3.5px;
-  }
-
-  @media(max-width: 992px) {
-    .content > div{max-width: none;}
-
-  }
-
-</style>
-
 <main>
   <section class="hero" style="background: linear-gradient(180deg, rgba(1, 1, 3, .35) 55%, rgba(1, 1, 3, .05)), url('assets/img/banner_services.jpg') center center / cover;">
     <span class="headline">Rekayasa dan Manufaktur</span>
@@ -167,12 +107,162 @@ require_once 'assets/components/navbar.php';
 
   </section>
 
-  <section id="projects-case" class="projects-case">
+  <section id="projects-case" class="projects-case" style="padding-top: 5.15em;">
     <div class="wrapper">
       <span class="judul">Projects</span>
       <div class="content">
-        <div class="engineering">
-          <span class="judul">-Cylinder unit repair-</span>
+        <div class="catur-pile">
+          <span class="judul">-PT. Catur Pile Perkasa-</span>
+          <div class="img-wrapper-wrapper">
+            <div class="img-wrapper">
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa.png" alt="catur pile perkasa">
+                <figcaption>Before</figcaption>
+
+              </div>
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa1.png" alt="catur pile perkasa1">
+
+              </div>
+
+            </div>
+            <div class="img-wrapper">
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa2.png" alt="catur pile perkasa2">
+                <figcaption>After</figcaption>
+
+              </div>
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa3.png" alt="catur pile perkasa3">
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="img-wrapper-wrapper">
+            <div class="img-wrapper">
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa11.png" alt="catur pile perkasa11">
+                <figcaption>Before</figcaption>
+
+              </div>
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa12.png" alt="catur pile perkasa12">
+
+              </div>
+
+            </div>
+            <div class="img-wrapper">
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa13.png" alt="catur pile perkasa13">
+                <figcaption>After</figcaption>
+
+              </div>
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa14.png" alt="catur pile perkasa14">
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <span>Cylinder Hydraulics repair</span>
+          <div class="img-wrapper-wrapper">
+            <div class="img-wrapper">
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa4.png" alt="catur pile perkasa4">
+                <figcaption>Before</figcaption>
+
+              </div>
+
+            </div>
+            <div class="img-wrapper">
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa5.png" alt="catur pile perkasa5">
+                <figcaption>After</figcaption>
+
+              </div>
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa6.png" alt="catur pile perkasa6">
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="img-wrapper-wrapper">
+            <div class="img-wrapper">
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa7.png" alt="catur pile perkasa7">
+                <figcaption>Before</figcaption>
+
+              </div>
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa8.png" alt="catur pile perkasa8">
+
+              </div>
+
+            </div>
+            <div class="img-wrapper">
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa9.png" alt="catur pile perkasa9">
+                <figcaption>After</figcaption>
+
+              </div>
+              <div class="thumbnail">
+                <img src="assets/img/catur_pile_perkasa10.png" alt="catur pile perkasa10">
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="vivalindo">
+          <span class="judul">-PT. Vivalindo-</span>
+          <div class="img-wrapper">
+            <div class="thumbnail">
+              <img src="assets/img/vivalindo.png" alt="pt. vivalindo">
+              <figcaption>Make new gland</figcaption>
+
+            </div>
+            <div class="thumbnail">
+              <img src="assets/img/vivalindo1.png" alt="pt. vivalindo1">
+              <figcaption>Make new cylinder</figcaption>
+
+            </div>
+            <div class="thumbnail">
+              <img src="assets/img/vivalindo2.png" alt="pt. vivalindo2">
+              <figcaption>Make new rod & piston</figcaption>
+
+            </div>
+            <div class="thumbnail">
+              <img src="assets/img/vivalindo3.png" alt="pt. vivalind3">
+              <figcaption>Sepatu rod</figcaption>
+
+            </div>
+            <div class="thumbnail">
+              <img src="assets/img/vivalindo4.png" alt="pt. vivalindo4">
+              <figcaption>Assembling new cylinder</figcaption>
+
+            </div>
+            <div class="thumbnail">
+              <img src="assets/img/vivalindo5.png" alt="pt. vivalindo5">
+              <figcaption>New cylinder jack kaki</figcaption>
+
+            </div>
+
+          </div>
+          <span>Developed new cylinder jack</span>
+
+        </div>
+
+        <div class="indah-kiat">
+          <span class="judul">-PT. Indah Kiat Pulp & Paper Perawang-</span>
           <div class="img-wrapper">
             <div class="thumbnail">
               <img src="assets/img/indah kiat pulp & paper perawang before.png" alt="pt. indah kiat pulp & paper perawang before">
@@ -186,11 +276,90 @@ require_once 'assets/components/navbar.php';
             </div>
 
           </div>
-          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+          <div class="img-wrapper">
+            <div class="thumbnail">
+              <img src="assets/img/indah kiat pulp & paper perawang1.png" alt="pt. indah kiat pulp & paper perawang1">
+              <figcaption>Before</figcaption>
+
+            </div>
+            <div class="thumbnail">
+              <img src="assets/img/indah kiat pulp & paper perawang2.png" alt="pt. indah kiat pulp & paper perawang2">
+              <figcaption>After</figcaption>
+
+            </div>
+            <span>Cylinder unit repair</span>
+
+          </div>
 
         </div>
 
       </div>
+
+    </div>
+
+  </section>
+
+  <section class="products">
+    <div class="wrapper">
+      <span class="judul">Products</span>
+      <div class="content">
+        <div class="seal-kit-roll">
+          <span class="judul">Seal kit & roll manufacture</span>
+          <div class="img-wrapper">
+            <div class="thumbnail" style="max-width: none;">
+              <img src="assets/img/seal_kit_roll.png" alt="seal kit & roll manufacture">
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="rotary-joint">
+          <span class="judul">Rotary joint</span>
+          <div class="img-wrapper">
+            <div class="thumbnail" style="max-width: none;">
+              <img src="assets/img/rotary_joint.png" alt="rotary joint">
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hydraulic-pneumatic-seal">
+          <span class="judul">Hydraulic & pneumatic seal</span>
+          <div class="img-wrapper">
+            <div class="thumbnail" style="max-width: none;">
+              <img src="assets/img/hydraulics_pneumatic_seal.png" alt="hydraulic & pneumatic seal">
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hydraulic-pneumatic-seal">
+          <span class="judul">Various PTFE Teflon & Bronze products</span>
+          <div class="img-wrapper">
+            <div class="thumbnail" style="max-width: none;">
+              <img src="assets/img/ptfe_teflon_bronze.png" alt="ptfe teflon bronze">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="simpulan">
+    <div class="wrapper">
+      <a href="#"><span class="judul">Download Portofolio</span></a>
 
     </div>
 
