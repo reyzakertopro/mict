@@ -44,9 +44,35 @@ require_once 'assets/components/navbar.php';
   .services-home .wrapper > span:nth-child(3){max-width: 768px;}
 
   /* insight section */
+  .insight-home .wrapper > .judul{text-align: center;}
+  .blog-wrapper{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: .5em 0;
+    row-gap: .5em;
+    display: flex;
+  }
+  .blog{
+    max-width: calc(100% / 3 - .25em);
+    flex-direction: column;
+    padding: .5em 0;
+    display: flex;
+    width: 100%;
+    gap: .5em;
+  }
+  .blog > .date{font-size: .85em;}
+  .blog > .judul{
+    font-size: 1.175em;
+    font-weight: 600;
+  }
+
 
   @media(max-width: 768px) {
+    /* services section */
     .services-home .wrapper > span:nth-child(3){line-height: 1.5em;}
+
+    /* insight section */
+    .blog{max-width: none;}
 
   }
 
@@ -118,43 +144,67 @@ require_once 'assets/components/navbar.php';
       <span class="judul">Projects & Updates</span>
       <div class="blog-wrapper">
         <div class="blog">
-          <span class="date">date-month-year hour:minute</span>
-          <span class="judul">Project 1</span>
+          <div class="img-wrapper">
+            <div class="thumbnail">
+              <img src="assets/img/samudra_case1.png" alt="PT. Tangguh Samudra Jaya">
+              <figcaption>caption</figcaption>
+
+            </div>
+            <div class="thumbnail">
+              <img src="assets/img/samudra_case2.png" alt="PT. Tangguh Samudra Jaya">
+              <figcaption>caption</figcaption>
+
+            </div>
+            <div class="thumbnail">
+              <img src="assets/img/samudra_case3.png" alt="PT. Tangguh Samudra Jaya">
+              <figcaption>caption</figcaption>
+
+            </div>
+            <div class="thumbnail">
+              <img src="assets/img/samudra_case4.png" alt="PT. Tangguh Samudra Jaya">
+              <figcaption>caption</figcaption>
+
+            </div>
+
+          </div>
+          <span class="date">01-January-2024 10:24</span>
+          <span class="judul">PT. Tangguh Samudra Jaya</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">date-month-year hour:minute</span>
-          <span class="judul">Project 2</span>
+          <img src="assets/img/indah kiat pulp & paper perawang after.png" alt="PT. Indah Kiat Pulp & Paper Perawang">
+          <span class="date">01-January-2024 10:24</span>
+          <span class="judul">PT. Indah Kiat Pulp & Paper Perawang</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">date-month-year hour:minute</span>
+          <span class="date">01-January-2024 10:24</span>
           <span class="judul">Project 3</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">date-month-year hour:minute</span>
+          <span class="date">01-January-2024 10:24</span>
           <span class="judul">Update 1</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">date-month-year hour:minute</span>
+          <span class="date">01-January-2024 10:24</span>
           <span class="judul">Update 2</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">date-month-year hour:minute</span>
+          <span class="date">01-January-2024 10:24</span>
           <span class="judul">Update 3</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">date-month-year hour:minute</span>
+          <span class="date">01-January-2024 10:24</span>
           <span class="judul">Project 4</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
