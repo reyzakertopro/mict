@@ -4,11 +4,16 @@ require_once 'assets/components/navbar.php';
 ?>
 <style>
   nav{
-    backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(2.25px);
     position: fixed;
   }
   nav :is(span, i){color: #fff;}
   nav:after{border-bottom: 1.75px solid rgba(255, 255, 255, .75);}
+  nav.scrolled{box-shadow: 0 0 4px rgba(1, 1, 3, .25);}
+
+  section:not(.hero) .wrapper span{line-height: 1.5em;}
+
+  .thumbnail{padding: .15em;}
 
   /* hero section */
   .hero .wrapper{min-height: 100vh;}
@@ -35,7 +40,10 @@ require_once 'assets/components/navbar.php';
   .logo-wrapper img:hover{filter: none;}
 
   /* services section */
-  .services-home .wrapper{align-items: center;}
+  .services-home .wrapper{
+    align-items: center;
+    gap: .75em;
+  }
   .services-home .wrapper > span{text-align: center;}
   .services-home .wrapper > .caption{
     font-size: 2em;
@@ -44,28 +52,68 @@ require_once 'assets/components/navbar.php';
   .services-home .wrapper > span:nth-child(3){max-width: 768px;}
 
   /* insight section */
-  .insight-home .wrapper > .judul{text-align: center;}
+  .insight-home .wrapper{gap: .75em;}
+  .insight-home .wrapper > span{text-align: center;}
   .blog-wrapper{
     justify-content: space-between;
     flex-wrap: wrap;
     padding: .5em 0;
-    row-gap: .5em;
+    row-gap: 1.25em;
     display: flex;
   }
   .blog{
-    max-width: calc(100% / 3 - .25em);
+    max-width: calc(100% / 4 - 1.25em);
     flex-direction: column;
     padding: .5em 0;
     display: flex;
     width: 100%;
     gap: .5em;
   }
-  .blog > .date{font-size: .85em;}
+  .blog > .date{
+    font-family: 'Sen', sans-serif;
+    font-size: .85em;
+  }
   .blog > .judul{
     font-size: 1.175em;
     font-weight: 600;
   }
+  .blog > .description{font-size: .95em;}
 
+  /* why choose us section */
+  .choose-us{
+    background: linear-gradient(180deg, rgba(1, 1, 3, .25), rgba(1, 1, 3, .5)), url('assets/img/james-sullivan-ESZRBtkQ_f8-unsplash.jpg') center center / cover;
+    box-shadow: 0 0 4px rgba(1, 1, 3, .5);
+  }
+  .choose-us :is(span, li, i){color: #fff;}
+  .choose-us .wrapper{align-items: center;}
+  .segment-wrapper{
+    justify-content: center;
+    padding: .75em 0;
+    flex-wrap: wrap;
+    display: flex;
+    row-gap: .75em;
+  }
+  .segment{
+    width: calc(100% / 4);
+    border-radius: 2.5px;
+    transition: all .15s;
+    min-width: 240px;
+    padding: 1.5em;
+  }
+  .segment:hover{background: rgba(1, 1, 3, .15);}
+  .segment:not(:nth-last-child(1)){
+    border-right: 1px solid rgba(255, 255, 255, .5);
+  }
+  .segment .judul{
+    text-shadow: 2.5px 2.5px 2.5px rgba(1, 1, 3, .25);
+    font-size: 1.175em;
+    font-weight: 600;
+  }
+  .segment ul{
+    flex-direction: column;
+    display: flex;
+    gap: .25em;
+  }
 
   @media(max-width: 768px) {
     /* services section */
@@ -73,6 +121,13 @@ require_once 'assets/components/navbar.php';
 
     /* insight section */
     .blog{max-width: none;}
+
+    /* why choose us section */
+    .segment{width: 80%;}
+    .segment:not(:nth-last-child(1)){
+      border-bottom: 1px solid rgba(255, 255, 255, .5);
+      border-right: none;
+    }
 
   }
 
@@ -141,76 +196,155 @@ require_once 'assets/components/navbar.php';
 
   <section class="insight-home">
     <div class="wrapper">
-      <span class="judul">Projects & Updates</span>
+      <span class="judul">Insight</span>
       <div class="blog-wrapper">
         <div class="blog">
           <div class="img-wrapper">
-            <div class="thumbnail">
-              <img src="assets/img/samudra_case1.png" alt="PT. Tangguh Samudra Jaya">
-              <figcaption>caption</figcaption>
-
-            </div>
-            <div class="thumbnail">
-              <img src="assets/img/samudra_case2.png" alt="PT. Tangguh Samudra Jaya">
-              <figcaption>caption</figcaption>
-
-            </div>
-            <div class="thumbnail">
-              <img src="assets/img/samudra_case3.png" alt="PT. Tangguh Samudra Jaya">
-              <figcaption>caption</figcaption>
-
-            </div>
-            <div class="thumbnail">
-              <img src="assets/img/samudra_case4.png" alt="PT. Tangguh Samudra Jaya">
-              <figcaption>caption</figcaption>
+            <div class="thumbnail" style="width: 100%;">
+              <img src="assets/img/update_placeholder.jpg" alt="update1">
 
             </div>
 
           </div>
-          <span class="date">01-January-2024 10:24</span>
-          <span class="judul">PT. Tangguh Samudra Jaya</span>
+          <span class="judul">Project</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <img src="assets/img/indah kiat pulp & paper perawang after.png" alt="PT. Indah Kiat Pulp & Paper Perawang">
-          <span class="date">01-January-2024 10:24</span>
-          <span class="judul">PT. Indah Kiat Pulp & Paper Perawang</span>
+          <div class="img-wrapper">
+            <div class="thumbnail" style="width: 100%;">
+              <img src="assets/img/update_placeholder.jpg" alt="update1">
+
+            </div>
+
+          </div>
+          <span class="judul">Project</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">01-January-2024 10:24</span>
-          <span class="judul">Project 3</span>
+          <div class="img-wrapper">
+            <div class="thumbnail" style="width: 100%;">
+              <img src="assets/img/update_placeholder.jpg" alt="update1">
+
+            </div>
+
+          </div>
+          <span class="judul">Project</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">01-January-2024 10:24</span>
-          <span class="judul">Update 1</span>
+          <div class="img-wrapper">
+            <div class="thumbnail" style="width: 100%;">
+              <img src="assets/img/update_placeholder.jpg" alt="update1">
+
+            </div>
+
+          </div>
+          <span class="judul">Project</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">01-January-2024 10:24</span>
-          <span class="judul">Update 2</span>
+          <div class="img-wrapper">
+            <div class="thumbnail" style="width: 100%;">
+              <img src="assets/img/update_placeholder.jpg" alt="update1">
+
+            </div>
+
+          </div>
+          <span class="judul">Project</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">01-January-2024 10:24</span>
-          <span class="judul">Update 3</span>
+          <div class="img-wrapper">
+            <div class="thumbnail" style="width: 100%;">
+              <img src="assets/img/update_placeholder.jpg" alt="update1">
+
+            </div>
+
+          </div>
+          <span class="judul">Project</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
         <div class="blog">
-          <span class="date">01-January-2024 10:24</span>
-          <span class="judul">Project 4</span>
+          <div class="img-wrapper">
+            <div class="thumbnail" style="width: 100%;">
+              <img src="assets/img/update_placeholder.jpg" alt="update1">
+
+            </div>
+
+          </div>
+          <span class="judul">Project</span>
+          <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+
+        </div>
+        <div class="blog">
+          <div class="img-wrapper">
+            <div class="thumbnail" style="width: 100%;">
+              <img src="assets/img/update_placeholder.jpg" alt="update1">
+
+            </div>
+
+          </div>
+          <span class="judul">Project</span>
           <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
         </div>
 
       </div>
+
+    </div>
+
+  </section>
+
+  <section class="choose-us">
+    <div class="wrapper">
+      <span class="judul">Why Choose Us</span>
+      <div class="segment-wrapper">
+        <div class="segment">
+          <span class="judul">Spesialis Hidraulik</span>
+          <ul>
+            <li>Tim ahli berpengalaman bertahun-tahun dalam industri hidraulik.</li>
+            <li>Memahami secara mendalam berbagai jenis sistem dan komponen hidraulik</li>
+            <li>Solusi yang tepat sasaran untuk setiap permasalahan hidraulik anda.</li>
+          </ul>
+
+        </div>
+        <div class="segment">
+          <span class="judul">Jasa Lengkap</span>
+          <ul>
+            <li>Perbaikan semua jenis komponen hidraulik, dari yang terkecil hingga yang terbesar.</li>
+            <li>Penyadiaan sparepart berkualitas.</li>
+            <li>Menufaktur komponen baru atau unit baru sesuai kebutuhan spesifik anda.</li>
+          </ul>
+
+        </div>
+        <div class="segment">
+          <span class="judul">Solusi Komprehensif</span>
+          <ul>
+            <li>Analisis kerusakan yang akurat dan menyeluruh.</li>
+            <li>Perencanaan perbaikan yang terstruktur.</li>
+            <li>Pelaksanaan perbaikan yang terintegrasi.</li>
+          </ul>
+
+        </div>
+        <div class="segment">
+          <span class="judul">Kualitas Terjamin</span>
+          <ul>
+            <li>Penggunaan komponen berkualitas tinggi.</li>
+            <li>Proses produksi yang terstandarisasi.</li>
+            <li>Pengujian menyeluruh terhadap seluruh lini produksi.</li>
+          </ul>
+
+        </div>
+
+      </div>
+      <span>untuk mendapatkan penawaran terbaik.</span>
+      <a href="#" class="cta"><span>Hubungi kami sekarang <i class="fa-solid fa-arrow-right"></i></span></a>
 
     </div>
 
