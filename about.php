@@ -1,106 +1,19 @@
 <?php
 require_once 'assets/components/header.php';
 require_once 'assets/components/navbar.php';
+
 ?>
 
-<style>
-  /* Hero section */
-  .hero{min-height: 110vh;}
-  .hero span{text-align: center;}
-
-  /* About us section */
-  .about-us p{font-size: 1.05em;}
-  section img{
-    width: 100%;
-    max-width: 678px;
-  }
-
-  /* capabilities section */
-  .skill{background: rgba(1, 1, 3, .075);}
-  .skill .wrapper .skill-layout{
-    display: flex;
-    width: 100%;
-    gap: .25em;
-    justify-content: center;
-  }
-  .skill-layout > *{
-    display: flex;
-    justify-content: center;
-    padding: .75em;
-  }
-  .desc-container > div{
-    flex-direction: column;
-    display: flex;
-    gap: .75em;
-  }
-  .desc-container div div > span{font-size: 1.075em;}
-  .skill-layout ul{padding-top: .25em;}
-  .skill-layout li{
-    padding-left: .75em;
-    list-style-position: inside;
-  }
-  .skill-layout img{
-    max-height: 480px;
-    border-radius: 3.5px;
-  }
-
-  /* Why choose us section */
-  .reasons .wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 1.25em;
-  }
-  .reasons ul{
-    padding-left: 1.25em;
-    display: flex;
-    flex-direction: column;
-    gap: .25em;
-  }
-  .reasons-wrapper{
-    display: flex;
-    gap: .75em;
-  }
-
-  /* Address section */
-  .address{background: rgba(1, 1, 3, .075);}
-  .address .wrapper{gap: 1.25em;}
-  .address-wrapper{
-    display: flex;
-    gap: .75em;
-  }
-  .address-wrapper .img-wrapper{max-width: 768px;}
-
-  @media(max-width: 992px) {
-    /* Capabilities section */
-    .skill .wrapper .skill-layout{flex-direction: column;}
-    .desc-container > div{
-      flex-direction: row;
-    }
-
-    /* Why Choose Us section */
-    .reasons-wrapper{flex-direction: column;}
-
-    /* Address Section */
-    .address-wrapper{flex-direction: column;}
-
-  }
-
-</style>
+<link rel="stylesheet" href="assets/css/about_services.css">
 
 <main>
   <button class="whatsapp" type="button"><i class="fa-brands fa-whatsapp"></i></button>
 
-  <div class="hero" style="background: linear-gradient(180deg, rgba(1, 1, 3, .35) 55%, rgba(1, 1, 3, .05)), url('assets/img/banner_about.jpg') center center / cover;">
-    <span class="headline">"Kami hadir atas dasar pengembangan teknologi bagi kemajuan bangsa, dengan meningkatkan kemampuan anak bangsa menjadi tenaga-tenaga yang professional dalam menciptakan produk unggulan, menjadi manusia yang bernilai bagi bangsa dan kehidupan yang baik."</span>
-    <span class="subjudul">-CEO MICT</span>
-
-  </div>
-
   <section class="about-us">
     <div class="wrapper">
       <span class="judul">About us</span>
-      <p><b>PT. Mitra Industrial Chrome Teknologi ( MICT )</b> adalah perusahaan swasta yang bergerak dibidang  Hard Chrome Platting, Hydraulics, Pneumatics, Roll, Rekondisi Valve, Manufacturing dan  Engineering Service.</p>
-      <p><b>Kami</b> mengawali kiprah kami dengan nama PT. Mitra Abadi Chrome pada tahun 2004. Seiring dengan berkembangnya waktu dan tuntutan terhadap kemajuan teknologi  yang semakin pesat serta kebutuhan pelayanan terhadap customer, kami  berkomitmen untuk berubah. Perubahan diawali dengan perubahan nama menjadi  PT.  Mitra Industrial Chrome Teknologi.</p>
+      <p><b>Kami adalah PT. Mitra Industrial Chrome Teknologi ( MICT )</b>; perusahaan swasta yang bergerak dibidang  <b>Hard Chrome Platting</b>, <b>Hydraulics</b>, <b>Pneumatics</b>, <b>Roll</b>, <b>Rekondisi Valve</b>, <b>Manufacturing</b> dan  <b>Engineering Service</b>.</p>
+      <p><b>Kami</b> mengawali kiprah kami dengan nama PT. Mitra Abadi Chrome pada tahun 2004. Seiring dengan berkembangnya waktu dan tuntutan terhadap kemajuan teknologi  yang semakin pesat serta kebutuhan pelayanan terhadap customer, kami  berkomitmen untuk berubah. Perubahan diawali dengan perubahan nama menjadi PT.  Mitra Industrial Chrome Teknologi.</p>
       <img src="assets/img/timeline.png" alt="timeline">
 
     </div>
@@ -109,12 +22,12 @@ require_once 'assets/components/navbar.php';
 
   <section class="skill">
     <div class="wrapper">
-      <span class="judul">Our capabilities</span>
+      <span class="judul">Our Capabilities</span>
       <div class="skill-layout">
         <div class="desc-container">
           <div>
             <div class="industry-classification">
-              <span>Industry Classification</span>
+              <span class="judul">Industry Classification</span>
               <ul>
                 <li>Port/Harbor industry</li>
                 <li>Cement industry</li>
@@ -132,7 +45,7 @@ require_once 'assets/components/navbar.php';
 
             </div>
             <div class="costumer-type">
-              <span>Costumer type</span>
+              <span class="judul">Costumer type</span>
               <ul>
                 <li>Goverment</li>
                 <li>Own state company</li>
@@ -157,26 +70,53 @@ require_once 'assets/components/navbar.php';
     <div class="wrapper">
       <span class="judul">Why Choose Us</span>
       <div class="reasons-wrapper">
-        <ul>
-          <li>Sejak berdiri, kami telah menorehkan sejumlah prestasi dalam penyelesaian proyek. Komitmen kami terhadap kualitas dan kecepatan pengiriman telah menjadikan kami kompetitif di pasar.</li>
-          <li>Semua pekerjaan dilakukan oleh para ahli yang berpengalaman di bidang masing-masing, didukung oleh fasilitas workshop yang memadai, serta dilengkapi dengan peralatan yang lengkap dan berkualitas.</li>
+        <div class="layout">
+          <p>
+            Sejak berdiri, kami telah menorehkan sejumlah prestasi dalam penyelesaian proyek. Komitmen kami terhadap kualitas dan kecepatan penyelesaian pekerjaan telah menjadikan kami kompetitif di pasar.
+            <br>
+            Semua pekerjaan dilakukan oleh para ahli yang berpengalaman di bidang masing-masing, didukung oleh fasilitas workshop yang memadai, serta dilengkapi dengan peralatan yang lengkap dan berkualitas.
+            <br>
+          </p>
+          <p>
+            <b><span>Portofolio bisnis kami mencakup;</span></b>
+            <ul>
+              <li>Perbaikan unit hydraulik, meliputi penggantian seal, juga perbaikan tabung yang bermasalah.</li>
+              <li>Repair rod(hard chrome platting)</li>
+              <li>Hard chrome platting.</li>
+              <li>Diagnosa dan perbaikan kerusakan unit hidrolik dan kelistrikan.</li>
+              <li>Pembuatan unit hydraulik baru.</li>
+              <li>Pembuatan rubber roll.</li>
+              <li>Pembuatan rubber couplings dan produk karet lainnya.</li>
+              <li>Pembuatan komponen.</li>
+              <li>Jasa teknik.</li>
+              <li>Perbaikan alat berat, Cylinder jack.</li>
+              <li>Pembuatan peralatan berat.</li>
+              <li>Perbaikan valve.</li>
 
-        </ul>
+            </ul>
+          </p>
+
+        </div>
+
         <div class="img-wrapper">
           <div class="thumbnail">
-            <img src="assets/img/chooseus1.png" alt="chooseus1">
+            <img src="assets/img/update_placeholder.jpg" alt="Ahli hydraulics, pneumatics, hard chrome platt, dll daerah tangerang">
+            <figcaption>caption</figcaption>
 
           </div>
           <div class="thumbnail">
-            <img src="assets/img/chooseus2.png" alt="chooseus2">
+            <img src="assets/img/update_placeholder.jpg" alt="Ahli hydraulics, pneumatics, hard chrome platt, dll daerah tangerang">
+            <figcaption>caption</figcaption>
 
           </div>
           <div class="thumbnail">
-            <img src="assets/img/chooseus3.png" alt="chooseus3">
+            <img src="assets/img/update_placeholder.jpg" alt="Ahli hydraulics, pneumatics, hard chrome platt, dll daerah tangerang">
+            <figcaption>caption</figcaption>
 
           </div>
           <div class="thumbnail">
-            <img src="assets/img/chooseus4.png" alt="chooseus4">
+            <img src="assets/img/update_placeholder.jpg" alt="Ahli hydraulics, pneumatics, hard chrome platt, dll daerah tangerang">
+            <figcaption>caption</figcaption>
 
           </div>
 
@@ -192,18 +132,34 @@ require_once 'assets/components/navbar.php';
     <div class="wrapper">
       <span class="judul">Our office & Workshop</span>
       <div class="address-wrapper">
+        <div class="img-wrapper">
+          <div class="thumbnail">
+            <img src="assets/img/update_placeholder.jpg" alt="alamat kantor & workshop PT. MICT">
+            <figcaption>caption</figcaption>
+
+          </div>
+          <div class="thumbnail">
+            <img src="assets/img/update_placeholder.jpg" alt="alamat kantor & workshop PT. MICT">
+            <figcaption>caption</figcaption>
+
+          </div>
+          <div class="thumbnail">
+            <img src="assets/img/update_placeholder.jpg" alt="alamat kantor & workshop PT. MICT">
+            <figcaption>caption</figcaption>
+
+          </div>
+          <div class="thumbnail">
+            <img src="assets/img/update_placeholder.jpg" alt="alamat kantor & workshop PT. MICT">
+            <figcaption>caption</figcaption>
+
+          </div>
+
+        </div>
         <ul style="padding-left: 1.25em;">
           <li>Kawasan Kavling DPR Blok A No. 153 Kenanga, Cipondoh Kota Tangerang, Banten Indonesia 15146</li>
           <li>Telepon : (021) 22263653 | info : office@ptmict.id</li>
 
         </ul>
-        <div class="img-wrapper">
-          <img src="assets/img/workshop.png" alt="workshop" style="width: 100%;">
-          <img src="assets/img/workshop1.png" alt="workshop1" style="width: 100%;">
-          <img src="assets/img/office1.png" alt="office1" style="width: 100%;">
-          <img src="assets/img/office2.png" alt="office2" style="width: 100%;">
-
-        </div>
 
       </div>
 
@@ -211,14 +167,31 @@ require_once 'assets/components/navbar.php';
 
   </section>
 
-  <section id="contact-us" class="contact-us" style="padding-top: 5.15em;">
+  <section id="contact-us" class="contact-us">
     <div class="wrapper">
       <span class="judul">Ada yang perlu disampaikan pada kami?</span>
       <form action="" method="post">
-        <input type="text" name="nama" placeholder="Nama">
-        <input type="text" name="email" placeholder="Email" type="email">
-        <textarea name="pesan" placeholder="Pesan"></textarea>
-        <button type="button" name="button">Kirim</button>
+        <div style="display: flex; flex-direction: column;">
+          <label for="nama">Nama*</label>
+          <input id="nama" type="text" name="nama" placeholder="Nama Lengkap" required>
+
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <label for="email">Email*</label>
+          <input type="text" id="email" name="email" placeholder="example@example.com" type="email" required>
+
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <label for="instansi">Instansi</label>
+          <input type="text" id="instansi" name="instansi" placeholder="Nama Instansi">
+
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <label for="pesan">Pesan*</label>
+          <textarea id="pesan" name="pesan" placeholder="Ketik pesan disini..." required></textarea>
+
+        </div>
+        <button type="submit" name="button">Kirim</button>
 
       </form>
 

@@ -4,8 +4,7 @@
     <div class="nav-menu">
       <a href="about.php"><span>Tentang Kami</span></a>
       <a href="services.php"><span>Product & Services</span></a>
-      <a href="services.php#projects-case"><span>Projects</span></a>
-      <a href="berita.php"><span>Berita</span></a>
+      <a href="services.php#insight"><span>Insight</span></a>
 
     </div>
 
